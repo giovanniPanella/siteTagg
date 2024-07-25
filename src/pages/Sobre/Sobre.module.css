@@ -1,0 +1,6 @@
+.avatar{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    box-shadow: inset 0 0 30px 50px #ccafaf ;
+}
