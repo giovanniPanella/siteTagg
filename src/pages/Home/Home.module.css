@@ -1,7 +1,7 @@
 /*css da page home*/
 .home{
-    width: 100%;
-    min-height: 89vh;
+    width: 90%;
+    min-height: 86vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -41,5 +41,6 @@
 
 .btn_red:hover{
     background-color: var(--primary);
+    transition: all 0.5s;
 
 }

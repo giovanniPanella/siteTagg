@@ -7,9 +7,9 @@ function Home (){
 
       <section className={styles.home}>
         <div className={styles.apresentacao}>
-          <p>Olá Sou<br/>
-          <span>Giovanni Gilles Panella</span><br/>
-          Engenheiro de Software
+          <p>Olá Somos<br/>
+          <span>TAGG Sistemas</span><br/>
+          Fazemos sua ideia virar Tecnologia ;)
           </p>
           <Link to="/sobre" className={`${styles.btn} ${styles.btn_red}`}>Saiba Mais</Link>
         </div>
