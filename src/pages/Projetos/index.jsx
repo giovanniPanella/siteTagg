@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function Projetos (){
   const [repositories, setRepositories] = useState([])
-  const token ='' 
+  const token ='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' 
   const userName = 'giovanniPanella'
   
   
