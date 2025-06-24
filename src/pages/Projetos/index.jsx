@@ -1,32 +1,19 @@
 import { useEffect, useState } from "react"
 import Card from "../../components/Card"
 import styles from './Projetos.module.css'
-import axios from 'axios';
-
-
 
 function Projetos (){
   const [repositories, setRepositories] = useState([])
-  const token ='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' 
-  const userName = 'giovanniPanella'
+   const userName = 'giovanniPanella'
   
   
   useEffect(()=>{
     const buscarRepositorios =async()=>{
-      //const response = await fetch()
-      try {
-        const response = await axios.get(`https://api.github.com/users/${userName}/repos?sort=created&direction=desc`, {
-          headers: {
-            Authorization: `token ${token}`,
-          },
-        });
-
-        setRepositories(response.data);
-      } catch (error) {
-        console.error(error);
-      }
+      const response = await fetch(`https://api.github.com/users/${userName}/repos?sort=created&direction=desc`)
+      const data = await response.json();
+      setRepositories(data);
     }
-    console.log(setRepositories)
+    
     buscarRepositorios();
   },[])
   
